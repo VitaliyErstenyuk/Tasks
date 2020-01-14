@@ -1,0 +1,19 @@
+div>div {
+    background-color: green;
+    display: table-row-group;
+    
+    width: 45px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+}
+div>div>div {
+    display: inline-block;
+    border: 1px solid black;
+}
+.bl {
+    background-color:blue;
+}
+.yel {
+    background-color: yellow;
+}
