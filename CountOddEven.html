@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        function countOddEvenNumbers(n) {
+            if (arguments.length) {
+                var a = n.toString().split('').map(string => +string);
+                var result = { odd: 0, even: 0 };
+                for (let i = 0; i < a.length; i++) {
+                    if ((a[i] % 2 == 0) || (a[i] == 0)) {
+                        result.even += 1;
+                    }
+                    else {
+                        result.odd += 1;
+                    }
+                }
+                console.log(result);
+                return result;
+            }
+            else {
+                alert("no arguments")
+            }
+        }
+        countOddEvenNumbers(01225487210003654878);
+
+    </script>
+</body>

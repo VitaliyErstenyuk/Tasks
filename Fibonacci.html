@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        function generateFibonacciSequence(n) {
+            var fibo = [1, 1];
+            if (n < 1) {
+                fibo = null;
+            }
+            else if (n >= 2) {
+                for (let i = 2; i < n; i++) {
+                    fibo[i] = fibo[i - 1] + fibo[i - 2];
+                }
+            }
+            else {
+                fibo.splice(0, n);
+            }
+            console.log(fibo);
+            return fibo;
+        }
+        generateFibonacciSequence(5);
+
+    </script>
+</body>

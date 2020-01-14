@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+
+        function shuffleArrey(names) {
+            if (Array.isArray(names)) {
+                var newArray = [];
+                newArray = names.sort(() => Math.random() - 0.5);
+                console.log(newArray);
+            }
+            return shuffleArrey;
+        }
+        shuffleArrey(["Андрій", "Василь", "Петро", "Марія", "Ганна"])
+
+    </script>
+</body>
